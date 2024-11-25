@@ -1,6 +1,6 @@
 # ComfyUI_PaddleOcr
 本节点主要是基于PaddleOcr模型，进行Ocr检测和识别，并输出图片、字符串、JSON信息。
-
+![image](https://github.com/karmueo/ComfyUI_PaddleOcr/blob/main/doc/ocr.png)
 
 
 # 节点
