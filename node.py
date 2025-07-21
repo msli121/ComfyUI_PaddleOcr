@@ -83,7 +83,7 @@ class PaddleOcrRun:
             },
         }
 
-    RETURN_TYPES = ("IMAGE", "STRING", "JSON")
+    RETURN_TYPES = ("IMAGE", "STRING", "STRING")
     RETURN_NAMES = ("image", "caption", "json_string")
     FUNCTION = "ocr"
     CATEGORY = "PaddleOCR"
