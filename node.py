@@ -119,9 +119,7 @@ class PaddleOcrRun:
             )
             print(f"output_image shape: {output_image.shape} type: {output_image.dtype} max: {output_image.max()}")
             processed_images.append(output_image)
-            print(f"processed_images shape: {processed_images.shape} type: {processed_images.dtype} max: {processed_images.max()}")
 
         output_images = torch.cat(processed_images, dim=0)
-        print(f"output_images shape: {output_images.shape} type: {output_images.dtype} max: {output_images.max()}")
         json_string = json.dumps(out_data, ensure_ascii=False)
         return (output_images, out_results, json_string)
