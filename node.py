@@ -121,5 +121,7 @@ class PaddleOcrRun:
             processed_images.append(output_image)
 
         output_images = torch.cat(processed_images, dim=0)
+        # 打印output_images的shape
+        print(f"output_images shape: {output_images.shape} type: {output_images.dtype} max: {output_images.max()}")
         json_string = json.dumps(out_data, ensure_ascii=False)
         return (output_images, out_results, json_string)
